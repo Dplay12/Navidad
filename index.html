@@ -1012,6 +1012,9 @@
       new TWEEN.Tween(coords)
       .to ({x: -70, y: 30, z: 370})
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z))
+      .onComplete(() => {
+      camera.lookAt(casa6.position);
+      })
       .start();
       });
       interactionManager.add(hniev);
@@ -1029,6 +1032,9 @@
       new TWEEN.Tween(coords) 
       .to ({x: -130, y: 30, z: 220}) 
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
+      .onComplete(() => {
+      camera.lookAt(hga.position);
+      })
       .start(); 
     }); 
     interactionManager.add(casa6);
@@ -1045,6 +1051,9 @@
       new TWEEN.Tween(coords) 
       .to ({x: -130, y: 30, z: 220}) 
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
+      .onComplete(() => {
+      camera.lookAt(hga.position);
+      })
       .start(); 
     }); 
     interactionManager.add(corona6);
@@ -1062,6 +1071,9 @@
       new TWEEN.Tween(coords) 
       .to ({x: 40, y: 30, z: 170}) 
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
+      .onComplete(() => {
+      camera.lookAt(reg1.position);
+      })
       .start(); 
     }); 
     interactionManager.add(hga);
@@ -1078,7 +1090,10 @@
       event.target.scale.set(1,2,2); 
       new TWEEN.Tween(coords) 
       .to ({x: -50, y: 30, z: -125}) 
-      .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
+      .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z))
+      .onComplete(() => {
+      camera.lookAt(silla1.position);
+      }) 
       .start(); 
     }); 
     interactionManager.add(reg1);
@@ -1095,6 +1110,9 @@
       new TWEEN.Tween(coords) 
       .to ({x: -50, y: 30, z: -125}) 
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
+      .onComplete(() => {
+      camera.lookAt(silla1.position);
+      }) 
       .start(); 
     }); 
     interactionManager.add(reg13);
@@ -1111,6 +1129,9 @@
       new TWEEN.Tween(coords) 
       .to ({x: -50, y: 30, z: -125}) 
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
+      .onComplete(() => {
+      camera.lookAt(silla1.position);
+      }) 
       .start(); 
     }); 
     interactionManager.add(reg14);
@@ -1128,6 +1149,9 @@
       new TWEEN.Tween(coords) 
       .to ({x: 140, y: 60, z: -70}) 
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
+      .onComplete(() => {
+      camera.lookAt(arbol_nav.position);
+      })
       .start(); 
     }); 
     interactionManager.add(silla1);
@@ -1178,4 +1202,5 @@
 </body>
 
 </html>
+
 
