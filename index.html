@@ -1143,7 +1143,7 @@
       var coords = {x: camera.position.x, y: camera.position.y, z: camera.position.z}; 
       event.target.scale.set(2,2,2); 
       new TWEEN.Tween(coords) 
-      .to ({x: 0, y: 30, z: -230}) 
+      .to ({x: 0, y: 30, z: -150}) 
       .onUpdate(() => camera.position.set(coords.x, coords.y, coords.z)) 
       .start(); 
     }); 
@@ -1178,3 +1178,4 @@
 </body>
 
 </html>
+
