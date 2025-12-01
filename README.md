@@ -44,3 +44,6 @@ Abre el archivo index.html en tu navegador.
 Disfruta del recorrido por el escenario navideño.
 
 Se recomienda usar Google Chrome o Firefox para el mejor rendimiento.
+
+Proyecto: https://dplay12.github.io/Navidad/
+
